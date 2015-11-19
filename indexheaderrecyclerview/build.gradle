@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 23
@@ -23,4 +24,14 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:recyclerview-v7:23.0.0'
+}
+publish {
+    userOrg = 'dubulee'
+    groupId = 'com.github.dubulee'
+    artifactId = 'indexheaderrecyclerview'
+    publishVersion = '0.1.0'
+    desc = 'Android RecyclerView List with Index Header Section'
+    website = 'https://github.com/DUBULEE/IndexHeaderRecyclerview'
+    issueTracker = "${website}/issues"
+    repository = "${website}.git"
 }

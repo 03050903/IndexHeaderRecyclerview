@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 23
@@ -28,13 +27,3 @@ dependencies {
     compile project(':indexheaderrecyclerview')
 }
 
-//publish {
-//    userOrg = 'dubulee'
-//    groupId = 'com.github.dubulee'
-//    artifactId = 'indexheaderrecyclerview'
-//    publishVersion = '0.1.0'
-//    desc = 'Android RecyclerView List with Index Header Section'
-//    website = 'https://github.com/DUBULEE/Android-LockScreenSample-DisableHomeButtonKey'
-//    issueTracker = "${website}/issues"
-//    repository = "${website}.git"
-//}
